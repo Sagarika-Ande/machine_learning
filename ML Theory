@@ -59,6 +59,9 @@ Clean Data: Handle missing values, remove duplicates.
 Feature Engineering: Convert categorical data into numbers.
                     Normalize/scale values if needed.
 
+Tree-based models don’t need scaling because they split data using thresholds, not distances.
+Scaling is important for models that use distances or gradients.
+
 Step 4: Split Data
 
 Split data into:
