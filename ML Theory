@@ -37,3 +37,55 @@ Reinforcement Learning: Learns through trial and error to maximize rewards, idea
                        Find hidden structures or group similar data.
 >>>>>>> 21404d92e68e16eababa2e02d4995345943ba412
 🎮 Example: A robot learns to walk or a game AI learns to win by getting reward points.
+
+
+3. Steps to Train a Machine Learning Model?
+
+Step 1: Define the Problem
+
+Decide what you want the model to do.
+Example: Predict house prices based on features like size, bedrooms, location.
+Type of ML problem: Regression (predict continuous value) or Classification (predict categories).
+
+Step 2: Collect Data
+
+Get data related to your problem.
+Data can come from CSV files, databases, or APIs.
+
+Step 3: Explore & Prepare Data (EDA & Preprocessing)
+
+EDA (Exploratory Data Analysis): Understand patterns in data. Example: plot Size vs Price.
+Clean Data: Handle missing values, remove duplicates.
+Feature Engineering: Convert categorical data into numbers.
+                    Normalize/scale values if needed.
+
+Step 4: Split Data
+
+Split data into:
+       Training set: 70–80% (for training the model)
+       Test/Validation set: 20–30% (to check performance)
+
+Step 5: Choose a Model
+
+Example choices:
+Linear Regression → continuous output (house price)
+Decision Tree / Random Forest → for complex patterns
+Logistic Regression / SVM → for classification problems
+
+Step 6: Train the Model
+
+Step 7: Evaluate the Model
+
+Check how well it predicts on test data.
+Metrics:
+       Regression: MSE, RMSE, R²
+       Classification: Accuracy, Precision, Recall, F1-score
+
+Step 8: Improve the Model
+
+Try different models or algorithms.
+Tune hyperparameters (learning rate, depth, etc.)
+Add more features or data.
+
+Step 9: Save & Use the Model
+Once happy with performance, save the model,Load later to make predictions
