@@ -92,3 +92,104 @@ Add more features or data.
 
 Step 9: Save & Use the Model
 Once happy with performance, save the model,Load later to make predictions
+
+
+4. 🌟 What is sklearn?
+
+sklearn stands for Scikit-Learn — it’s one of the most popular Machine Learning libraries in Python.
+👉 It makes ML easier — you don’t have to write algorithms from scratch!
+
+It provides ready-to-use tools for:
+              Training ML models (like regression, classification, clustering)
+              Splitting data into train/test
+              Evaluating models (accuracy, R², etc.)
+              Doing preprocessing (scaling, encoding, etc.)
+
+
+5. Types of ML (Based on Learning Style)
+
+There are 3 main types of ML, and different models are used under each type:
+
+Supervised Learning	Model learns from labeled data (input → output known)	
+- Linear Regression
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- Support Vector Machine (SVM)
+- K-Nearest Neighbors (KNN)	
+EX: Predict house price, classify fruit type, spam detection
+
+Unsupervised Learning	Model learns from unlabeled data to find patterns	
+- K-Means Clustering
+- Hierarchical Clustering
+- Principal Component Analysis (PCA)
+- DBSCAN	
+EX: Customer segmentation, anomaly detection, data compression
+
+Reinforcement Learning	Model learns by trial & error with rewards	- Q-Learning
+- Deep Q-Network (DQN)
+- Policy Gradient Methods
+EX: Game AI, robot learning, self-driving cars
+
+5. 💡 Quick visual idea:
+
+Case	              Training Accuracy	          Test Accuracy      	    Description
+Underfitting	       Low	                         Low	             Too simple, not learning
+Overfitting          High	   	                     Low               Too complex, memorizing
+Ideal                High/Good	                 High/Good	         Just right, generalizes well
+
+6. 
+Gradient: Tells the model which way to go to reduce error.
+
+Gradient Descent: Takes the steps to actually reach the minimum error.
+
+7.
+Term	                    Measures	                  Scope
+Loss Function	        Error for 1 example	         Single data point
+Cost Function	      Average error over dataset	    Whole dataset
+
+8.
+Regression → continuous numbers → MAE, MSE, RMSE, R²
+Classification → categories → Accuracy, Precision, Recall, F1, ROC-AUC
+
+9. 
+1. R² Score (Coefficient of Determination):
+Measures how well your regression model explains the variation in the target variable.
+Value ranges from 0 to 1 (sometimes negative if model is very bad).
+
+Interpretation:
+        R² = 1 → Perfect prediction
+        R² = 0 → Model predicts just the mean
+        R² < 0 → Model is worse than predicting the mean
+
+Analogy: How much of the “pattern” in the data your model has captured.
+
+2. Bias & Variance
+
+Bias: Error due to wrong assumptions in the model.
+
+      High bias → underfitting (too simple, misses patterns)
+
+Variance: Error due to model being too sensitive to training data.
+
+      High variance → overfitting (memorizes noise, fails on new data)
+
+Analogy:
+
+      High Bias: Shoots arrows far from target → consistently wrong
+      High Variance: Shoots arrows all over → sometimes hits, mostly inconsistent
+      Goal: Balance bias & variance → ideal model
+
+3. Regularization (L1 & L2) - Helps reduce overfitting by penalizing large weights.
+
+L1 Regularization (Lasso):
+      Adds penalty = sum of absolute values of weights
+      Effect: Can make some weights exactly 0 → feature selection
+
+L2 Regularization (Ridge):
+        Adds penalty = sum of squared values of weights
+        Effect: Shrinks weights but rarely to 0 → keeps all features
+
+Analogy:  
+      L1 = “throw away unimportant features”
+      L2 = “shrink weights but keep all features”
