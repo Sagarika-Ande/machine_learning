@@ -1,0 +1,25 @@
+1.🧠 What is Machine Learning (ML)?
+
+Machine Learning means teaching computers to learn from data — instead of giving them step-by-step rules.
+
+In normal programming:
+You give rules + data → output
+
+In ML:
+You give data + output → model learns rules
+
+DL subset of ML & ML subset of AI
+
+2. Types of Machine Learning?
+
+Supervised Learning: Trains models on labeled data to predict or classify new, unseen data.
+                     Learn from labeled data and predict outputs.
+📘 Example: Predict house price based on size.  Data: (size → price)
+
+Unsupervised Learning: Finds patterns or groups in unlabeled data, like clustering or dimensionality reduction.
+                       Find hidden structures or group similar data.
+📊 Example: Group customers into clusters based on spending habits (no labels).
+
+Reinforcement Learning: Learns through trial and error to maximize rewards, ideal for decision-making tasks.
+                        Learn best actions through feedback.
+🎮 Example: A robot learns to walk or a game AI learns to win by getting reward points.
