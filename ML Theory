@@ -193,3 +193,15 @@ L2 Regularization (Ridge):
 Analogy:  
       L1 = “throw away unimportant features”
       L2 = “shrink weights but keep all features”
+
+
+8. Machine Learning Algorithms?
+
+Difference Between Linear and Logistic Regression
+
+Feature	                                            Linear Regression	                                Logistic Regression
+Type of Problem                         	Regression  (predict continuous values)	             Classification (predict categories)
+Output	                                   Any real number (e.g., 10.5, 25000)	                  Probability between 0 and 1
+Activation Function	                         None (direct linear output)                         	Sigmoid function
+Example Use Case	                        Predicting house price, temperature, etc.	          Predicting spam/not spam, pass/fail, disease/no disease
+Loss Function	                              Mean Squared Error (MSE)	                         Binary Cross Entropy (Log Loss)
