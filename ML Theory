@@ -205,3 +205,7 @@ Output	                                   Any real number (e.g., 10.5, 25000)	  
 Activation Function	                         None (direct linear output)                         	Sigmoid function
 Example Use Case	                        Predicting house price, temperature, etc.	          Predicting spam/not spam, pass/fail, disease/no disease
 Loss Function	                              Mean Squared Error (MSE)	                         Binary Cross Entropy (Log Loss)
+
+
+9. SKLEARN?
+scikit-learn (sklearn) is a Python library that helps you easily build, train, and evaluate machine learning models — without having to write complex math or algorithms from scratch.
