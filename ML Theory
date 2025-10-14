@@ -209,3 +209,43 @@ Loss Function	                              Mean Squared Error (MSE)	           
 
 9. SKLEARN?
 scikit-learn (sklearn) is a Python library that helps you easily build, train, and evaluate machine learning models — without having to write complex math or algorithms from scratch.
+
+10.What is ROC Curve?
+
+ROC stands for Receiver Operating Characteristic curve.
+It is a graph that shows how well your classification model can distinguish between classes — like yes/no, 1/0, or positive/negative.
+
+It helps us evaluate model performance beyond just accuracy.
+
+AUC (Area Under Curve) = the area under the ROC curve.
+
+Ranges from 0 to 1
+Higher = better
+AUC = 1.0 → Perfect model
+AUC = 0.5 → No better than random guessing
+
+🧩 When do we use ROC Curve?
+
+✅ Use ROC Curve (and AUC) when:
+
+You are doing binary classification (e.g., “disease” vs “no disease”).
+Your model outputs probabilities (not just 0 or 1).
+You want to compare multiple models on how well they separate classes.
+
+🔹 We split data → to test on unseen data
+🔹 We use ROC–AUC → to measure how strong the model’s predictions are (not just correct/incorrect)
+
+11. K-Nearest Neighbors (KNN) in Machine Learning?
+
+K-nearest neighbors (KNN) algorithm is a type of supervised ML algorithm which can be used for both classification as well as regression predictive problems.
+
+For classification problems, the KNN algorithm assigns the test data point to the class that appears most frequently among the k-nearest neighbors. In other words, the class with the highest number of neighbors is the predicted class.
+
+For regression problems, the KNN algorithm assigns the test data point the average of the k-nearest neighbors' values.
+
+🧩 Example Comparison:
+KNN Example (Classification):
+        Predict if a fruit is an Apple or Orange based on weight and color.
+
+K-Means Example (Clustering):
+        Group fruits into clusters based on weight and color — without knowing which is apple/orange.
