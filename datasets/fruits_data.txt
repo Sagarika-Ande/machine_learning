@@ -1,0 +1,7 @@
+Fruit	Weight (g)	Color Score (0=green,1=yellow,2=red)
+Apple	150	                   2
+Apple	170	                   2
+Orange	160	                   0
+Orange	140	                   0
+Banana	120	                   1
+Banana	130			           1
