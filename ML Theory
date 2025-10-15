@@ -62,6 +62,11 @@ Feature Engineering: Convert categorical data into numbers.
 Tree-based models don’t need scaling because they split data using thresholds, not distances.
 Scaling is important for models that use distances or gradients.
 
+Model Type	                 Examples	                         Needs Scaling?            	Why
+Tree-based	            Decision Tree, Random Forest, XGBoost	     ❌              No	Uses thresholds, not distances
+Distance-based	            KNN, K-Means, SVM (RBF)	               ✅              Yes	Uses distance metrics
+Gradient-based	        Linear/Logistic Regression, Neural Nets	   ✅            Yes	Uses gradients for optimization
+
 Step 4: Split Data
 
 Split data into:
@@ -73,7 +78,7 @@ Step 5: Choose a Model
 Example choices:
 Linear Regression → continuous output (house price)
 Decision Tree / Random Forest → for complex patterns
-Logistic Regression / SVM → for classification problems
+Logistic Regression / SVM → for classification problems(catagories)
 
 Step 6: Train the Model
 
@@ -81,8 +86,8 @@ Step 7: Evaluate the Model
 
 Check how well it predicts on test data.
 Metrics:
-       Regression: MSE, RMSE, R²
-       Classification: Accuracy, Precision, Recall, F1-score
+       Regression: MSE, RMSE, R²(continues)
+       Classification: Accuracy, Precision, Recall, F1-score(catagories)
 
 Step 8: Improve the Model
 
