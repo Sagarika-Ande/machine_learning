@@ -13,29 +13,21 @@ DL subset of ML & ML subset of AI
 
 2. Types of Machine Learning?
 
-=======
+
 DL is subset of ML - ML is subset of AI
 
 2. Types of Machine Learning?
->>>>>>> 21404d92e68e16eababa2e02d4995345943ba412
+
 Supervised Learning: Trains models on labeled data to predict or classify new, unseen data.
                      Learn from labeled data and predict outputs.
 📘 Example: Predict house price based on size.  Data: (size → price)
 
 Unsupervised Learning: Finds patterns or groups in unlabeled data, like clustering or dimensionality reduction.
-<<<<<<< HEAD
-                       Find hidden structures or group similar data.
-📊 Example: Group customers into clusters based on spending habits (no labels).
+                      Find hidden structures or group similar data.
+📊 Example: Group customers into clusters based on spending habits (no labels), Customer Segmentation, Image Clustering, Fraud  Detection.
 
 Reinforcement Learning: Learns through trial and error to maximize rewards, ideal for decision-making tasks.
                         Learn best actions through feedback.
-=======
-                      Find hidden structures or group similar data.
-📊 Example: Group customers into clusters based on spending habits (no labels).
-
-Reinforcement Learning: Learns through trial and error to maximize rewards, ideal for decision-making tasks.
-                       Find hidden structures or group similar data.
->>>>>>> 21404d92e68e16eababa2e02d4995345943ba412
 🎮 Example: A robot learns to walk or a game AI learns to win by getting reward points.
 
 
@@ -159,6 +151,7 @@ Classification → categories → Accuracy, Precision, Recall, F1, ROC-AUC
 
 9. 
 1. R² Score (Coefficient of Determination):
+👉 Used to check model accuracy in regression (Linear, Lasso, Ridge, etc.)
 Measures how well your regression model explains the variation in the target variable.
 Value ranges from 0 to 1 (sometimes negative if model is very bad).
 
@@ -184,6 +177,8 @@ Analogy:
       High Bias: Shoots arrows far from target → consistently wrong
       High Variance: Shoots arrows all over → sometimes hits, mostly inconsistent
       Goal: Balance bias & variance → ideal model
+
+Variance causes overfitting. Regularization reduces variance to prevent overfitting.
 
 3. Regularization (L1 & L2) - Helps reduce overfitting by penalizing large weights.
 
