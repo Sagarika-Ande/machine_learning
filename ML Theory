@@ -6,13 +6,7 @@ In normal programming:
 You give rules + data → output
 
 In ML:
-You give data + output → model learns rules
-
-<<<<<<< HEAD
-DL subset of ML & ML subset of AI
-
-2. Types of Machine Learning?
-
+You give data + output → model learns rules.
 
 DL is subset of ML - ML is subset of AI
 
@@ -249,3 +243,29 @@ KNN Example (Classification):
 
 K-Means Example (Clustering):
         Group fruits into clusters based on weight and color — without knowing which is apple/orange.
+
+
+12. 🧠 What is SVM (Support Vector Machine)?
+
+SVM is a supervised machine learning algorithm used for classification and regression, but it’s mostly used for classification tasks.
+
+⚙️ How prediction happens:
+
+When a new email comes in, SVM checks which side of the boundary line it falls on.
+
+If the point (email) lies above the boundary line → predict 🔴 Spam
+If it lies below the boundary line → predict 🔵 Not Spam
+
+That’s it — the position relative to the boundary determines the class.
+
+             ↑ suspicious words
+             |
+   🔴🔴🔴🔴    (Spam region)
+     ↕
+   ------------------  ← Boundary line (decision line)
+     ↕
+   🔵🔵🔵🔵    (Not spam region)
+             |
+             └────────────→ links
+
+
