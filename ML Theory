@@ -283,3 +283,95 @@ That K value gives you the best balance between:
 
 good accuracy (low error) ✅
 and not too many clusters (simple model) ⚖️
+
+14.🌟 1. What is Naive Bayes Algorithm?
+
+Naive Bayes is a supervised classification algorithm based on Bayes’ Theorem.
+It is called “Naive” because it assumes that all features are independent of each other — which is rarely true in real life, but it still works surprisingly well!
+
+🧩 Example (Spam Detection)
+
+Let’s say we want to classify if an email is Spam or Not Spam.
+Features: presence of words like “win”, “offer”, “free”.
+
+P(Spam) = probability that a message is spam
+P(“win”|Spam) = probability that “win” appears in spam messages
+P(“win”|Not Spam) = probability that “win” appears in normal messages
+
+The algorithm calculates probabilities for both classes and chooses the one with higher value.
+
+🧮 2. Types of Naive Bayes Classifiers
+
+There are several variants depending on the type of input features.
+
+🟦 1. Gaussian Naive Bayes
+Used when features are continuous numerical values (e.g., height, weight, temperature).
+✳️ Example:
+Predict if a person will buy a product based on their age and income (both continuous).
+If the “Age” of buyers follows a Gaussian distribution, then Gaussian NB fits perfectly.
+
+🟨 2. Categorical (Multinomial or Bernoulli) Naive Bayes
+
+Used when features are categorical or discrete (e.g., words, yes/no, counts).
+
+🟧 a) Multinomial Naive Bayes
+
+Works with count data — e.g., number of times a word appears.
+Common in text classification (like spam filtering).
+
+Example:
+Email = “win a free offer now”
+Count words for each class → use probabilities → predict class.
+
+🟩 b) Bernoulli Naive Bayes
+
+Works with binary features (presence or absence of a word).
+Each feature is either 0 or 1.
+
+Example:
+“word ‘free’ present = 1” or “absent = 0”.
+
+15.🌟 What is K-Means Clustering?
+
+K-Means is an unsupervised learning algorithm used to group (cluster) similar data points together into K clusters based on distance/similarity.
+
+It tries to:
+Partition the dataset into K clusters such that each point belongs to the cluster with the nearest mean (centroid).
+
+💡 Example (Simple)
+
+Let’s say you have these points:
+
+(1,1), (2,1), (4,3), (5,4)
+You choose K = 2
+
+Step 1: Random centroids = (1,1) and (5,4)
+
+Step 2: Assign points:
+(1,1), (2,1) → closer to (1,1)
+(4,3), (5,4) → closer to (5,4)
+
+Step 3: Update centroids:
+Cluster 1 mean = (1.5, 1)
+Cluster 2 mean = (4.5, 3.5)
+
+Step 4: Repeat until centroids stop changing.
+
+Final clusters form around those centroids.
+
+16. 🌳 What is Decision Tree Algo?
+
+A decision tree in machine learning is a supervised learning algorithm used for both classification and regression tasks. It models decisions and their possible consequences in a tree-like structure, similar to a flowchart. 
+Key Components:
+Root Node: The starting point of the tree, representing the entire dataset.
+Internal Nodes (Decision Nodes): Nodes where a test or condition on an attribute is performed, leading to different branches based on the outcome.
+Branches: Represent the possible outcomes or choices resulting from a test at a decision node.
+Leaf Nodes (Terminal Nodes): The final nodes in the tree, representing the predicted class label (for classification) or a predicted value (for regression).
+
+Internally, the decision tree:
+
+Starts from the root node
+Evaluates the stored split condition at each node
+Chooses the branch that matches
+Continues until a leaf node is reached
+Returns the label (or average value, for regression)
