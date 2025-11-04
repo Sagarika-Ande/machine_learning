@@ -269,3 +269,17 @@ That’s it — the position relative to the boundary determines the class.
              └────────────→ links
 
 
+13. Elbow Method?
+🧠 Elbow method is used to find the best number of clusters (K) in K-Means clustering.
+
+💡 Simple Meaning:
+
+Start with K = 1, 2, 3, … and calculate the total error (WCSS).
+As K increases → error decreases (because more clusters = smaller groups).
+But after a certain K, the improvement (decrease in error) becomes very small.
+That point — where the curve bends — is called the elbow point.
+
+That K value gives you the best balance between:
+
+good accuracy (low error) ✅
+and not too many clusters (simple model) ⚖️
