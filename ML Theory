@@ -375,3 +375,63 @@ Evaluates the stored split condition at each node
 Chooses the branch that matches
 Continues until a leaf node is reached
 Returns the label (or average value, for regression)
+
+17. 🌳 What is an Ensemble Method?
+
+An ensemble method is a machine learning technique that combines multiple models (often called “weak learners”) to produce one strong model with better performance and accuracy than any single model alone.
+
+💡 Think of it like asking multiple experts for their opinions — when you combine them smartly, you get a more reliable final decision.
+
+🧠 Why Use Ensemble Methods?
+
+To reduce overfitting (variance)
+To reduce bias
+To improve accuracy and robustness
+To handle complex datasets
+
+🧩 Summary Table
+Type	           Training Style       	Purpose	                   Example Algorithm
+
+Bagging	         Parallel	              Reduce variance   	       Random Forest
+Boosting         Sequential	            Reduce bias	               AdaBoost, XGBoost
+Stacking	       Parallel + Meta-model	Combine multiple models	   StackingClassifier
+Voting	         Parallel	              Simple combination         VotingClassifier
+
+18.🧩 What is Bootstrap?
+Bootstrap is a sampling technique used to create multiple subsets of a dataset by randomly selecting data points with replacement.
+
+📘 Meaning of “with replacement”:
+
+If you pick a data point from the dataset, you put it back before picking the next one.
+So, the same data point can appear multiple times in one sample
+
+19.🌳 What is Random Forest?
+
+Random Forest is an ensemble method that uses both Bagging and Bootstrap concepts with Decision Trees.
+It builds many decision trees and combines their results to make a final prediction.
+
+⚙️ How Random Forest Works:
+
+a)Bootstrap Sampling:
+Create many random subsets of the data using bootstrap.
+
+b)Train Decision Trees:
+Train one decision tree per subset.
+
+c)Feature Randomness:
+At each tree split, choose a random subset of features instead of using all features — this makes trees more diverse.
+
+Aggregation:
+
+For classification → takes majority vote of trees.
+For regression → takes average of tree predictions.
+
+20.🌟 1️⃣ Gradient Boosting
+💡 Definition:
+Gradient Boosting builds models step by step, and each new model tries to minimize the errors (residuals) of the previous model using gradient descent.
+That’s why it’s called “Gradient” Boosting.
+
+🚀 2️⃣ XGBoost (Extreme Gradient Boosting)
+💡 Definition:
+XGBoost is an optimized and improved version of Gradient Boosting designed for speed and performance.
+It was created to overcome the limitations (slow speed & overfitting) of traditional Gradient Boosting.
