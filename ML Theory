@@ -283,3 +283,155 @@ That K value gives you the best balance between:
 
 good accuracy (low error) ✅
 and not too many clusters (simple model) ⚖️
+
+14.🌟 1. What is Naive Bayes Algorithm?
+
+Naive Bayes is a supervised classification algorithm based on Bayes’ Theorem.
+It is called “Naive” because it assumes that all features are independent of each other — which is rarely true in real life, but it still works surprisingly well!
+
+🧩 Example (Spam Detection)
+
+Let’s say we want to classify if an email is Spam or Not Spam.
+Features: presence of words like “win”, “offer”, “free”.
+
+P(Spam) = probability that a message is spam
+P(“win”|Spam) = probability that “win” appears in spam messages
+P(“win”|Not Spam) = probability that “win” appears in normal messages
+
+The algorithm calculates probabilities for both classes and chooses the one with higher value.
+
+🧮 2. Types of Naive Bayes Classifiers
+
+There are several variants depending on the type of input features.
+
+🟦 1. Gaussian Naive Bayes
+Used when features are continuous numerical values (e.g., height, weight, temperature).
+✳️ Example:
+Predict if a person will buy a product based on their age and income (both continuous).
+If the “Age” of buyers follows a Gaussian distribution, then Gaussian NB fits perfectly.
+
+🟨 2. Categorical (Multinomial or Bernoulli) Naive Bayes
+
+Used when features are categorical or discrete (e.g., words, yes/no, counts).
+
+🟧 a) Multinomial Naive Bayes
+
+Works with count data — e.g., number of times a word appears.
+Common in text classification (like spam filtering).
+
+Example:
+Email = “win a free offer now”
+Count words for each class → use probabilities → predict class.
+
+🟩 b) Bernoulli Naive Bayes
+
+Works with binary features (presence or absence of a word).
+Each feature is either 0 or 1.
+
+Example:
+“word ‘free’ present = 1” or “absent = 0”.
+
+15.🌟 What is K-Means Clustering?
+
+K-Means is an unsupervised learning algorithm used to group (cluster) similar data points together into K clusters based on distance/similarity.
+
+It tries to:
+Partition the dataset into K clusters such that each point belongs to the cluster with the nearest mean (centroid).
+
+💡 Example (Simple)
+
+Let’s say you have these points:
+
+(1,1), (2,1), (4,3), (5,4)
+You choose K = 2
+
+Step 1: Random centroids = (1,1) and (5,4)
+
+Step 2: Assign points:
+(1,1), (2,1) → closer to (1,1)
+(4,3), (5,4) → closer to (5,4)
+
+Step 3: Update centroids:
+Cluster 1 mean = (1.5, 1)
+Cluster 2 mean = (4.5, 3.5)
+
+Step 4: Repeat until centroids stop changing.
+
+Final clusters form around those centroids.
+
+16. 🌳 What is Decision Tree Algo?
+
+A decision tree in machine learning is a supervised learning algorithm used for both classification and regression tasks. It models decisions and their possible consequences in a tree-like structure, similar to a flowchart. 
+Key Components:
+Root Node: The starting point of the tree, representing the entire dataset.
+Internal Nodes (Decision Nodes): Nodes where a test or condition on an attribute is performed, leading to different branches based on the outcome.
+Branches: Represent the possible outcomes or choices resulting from a test at a decision node.
+Leaf Nodes (Terminal Nodes): The final nodes in the tree, representing the predicted class label (for classification) or a predicted value (for regression).
+
+Internally, the decision tree:
+
+Starts from the root node
+Evaluates the stored split condition at each node
+Chooses the branch that matches
+Continues until a leaf node is reached
+Returns the label (or average value, for regression)
+
+17. 🌳 What is an Ensemble Method?
+
+An ensemble method is a machine learning technique that combines multiple models (often called “weak learners”) to produce one strong model with better performance and accuracy than any single model alone.
+
+💡 Think of it like asking multiple experts for their opinions — when you combine them smartly, you get a more reliable final decision.
+
+🧠 Why Use Ensemble Methods?
+
+To reduce overfitting (variance)
+To reduce bias
+To improve accuracy and robustness
+To handle complex datasets
+
+🧩 Summary Table
+Type	           Training Style       	Purpose	                   Example Algorithm
+
+Bagging	         Parallel	              Reduce variance   	       Random Forest
+Boosting         Sequential	            Reduce bias	               AdaBoost, XGBoost
+Stacking	       Parallel + Meta-model	Combine multiple models	   StackingClassifier
+Voting	         Parallel	              Simple combination         VotingClassifier
+
+18.🧩 What is Bootstrap?
+Bootstrap is a sampling technique used to create multiple subsets of a dataset by randomly selecting data points with replacement.
+
+📘 Meaning of “with replacement”:
+
+If you pick a data point from the dataset, you put it back before picking the next one.
+So, the same data point can appear multiple times in one sample
+
+19.🌳 What is Random Forest?
+
+Random Forest is an ensemble method that uses both Bagging and Bootstrap concepts with Decision Trees.
+It builds many decision trees and combines their results to make a final prediction.
+
+⚙️ How Random Forest Works:
+
+a)Bootstrap Sampling:
+Create many random subsets of the data using bootstrap.
+
+b)Train Decision Trees:
+Train one decision tree per subset.
+
+c)Feature Randomness:
+At each tree split, choose a random subset of features instead of using all features — this makes trees more diverse.
+
+Aggregation:
+
+For classification → takes majority vote of trees.
+For regression → takes average of tree predictions.
+
+20.🌟 1️⃣ Gradient Boosting
+💡 Definition:
+Gradient Boosting builds models step by step, and each new model tries to minimize the errors (residuals) of the previous model using gradient descent.
+That’s why it’s called “Gradient” Boosting.
+
+🚀 2️⃣ XGBoost (Extreme Gradient Boosting)
+💡 Definition:
+XGBoost is an optimized and improved version of Gradient Boosting designed for speed and performance.
+It was created to overcome the limitations (slow speed & overfitting) of traditional Gradient Boosting.
