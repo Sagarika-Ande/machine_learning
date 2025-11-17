@@ -284,6 +284,56 @@ That K value gives you the best balance between:
 good accuracy (low error) ✅
 and not too many clusters (simple model) ⚖️
 
+⭐ 1. Silhouette Coefficient (Most Popular)
+👉 Simple Meaning
+
+It tells how well each point fits into its cluster compared to other clusters.
+
+Formula (simple idea)
+For each point:
+
+a = how close it is to points in its own cluster
+b = how far it is from the nearest other cluster​
+
+👉 Score Range
+
++1 → Perfect clustering (points well separated)
+0 → Borderline (points on the boundary between clusters)
+–1 → Wrong cluster (poor clustering)
+
+👉 Why use?
+To check how separated and compact clusters are.
+
+👉 Example (simple)
+
+If KMeans with k=3 gives silhouette score = 0.62,
+and k=4 gives silhouette = 0.41,
+→ 3 clusters is a better choice.
+
+⭐ 2. Calinski–Harabasz Index (Variance Ratio Criterion)
+👉 Simple Meaning
+
+It measures how dense each cluster is and how far clusters are from each other.
+More separation between clusters → Higher score
+More compact clusters → Higher score
+
+👉 Formula (concept)
+
+It compares:
+Between-cluster variance (distance between cluster centers)
+Within-cluster variance (how close each point is to its center)
+
+👉 Score Range
+
+No fixed range
+Higher is always better
+
+👉 When to use?
+
+When you want to evaluate clustering quality based on:
+compactness (tight clusters)
+separation (distinct clusters)
+
 14.🌟 1. What is Naive Bayes Algorithm?
 
 Naive Bayes is a supervised classification algorithm based on Bayes’ Theorem.
@@ -435,3 +485,50 @@ That’s why it’s called “Gradient” Boosting.
 💡 Definition:
 XGBoost is an optimized and improved version of Gradient Boosting designed for speed and performance.
 It was created to overcome the limitations (slow speed & overfitting) of traditional Gradient Boosting.
+
+21. Hierarchical Clustering (Tree-based Clustering)
+👉 Simple Meaning
+It builds a tree-like structure (dendrogram) by repeatedly joining or splitting clusters.
+
+Two Types
+
+Agglomerative (Bottom-up) → most used
+Start: each point is its own cluster
+Step-by-step: merge the two closest clusters
+End: everything becomes one big cluster
+Divisive (Top-down)
+Start: one big cluster
+Step-by-step: split into smaller clusters
+
+👉 Output
+A dendrogram (tree) where you can “cut” at any height to choose how many clusters you want.
+
+👉 Best for when:
+You want to see how clusters form step-by-step
+You don’t know the number of clusters beforehand
+You want a visual structure of clusters
+
+22. DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
+👉 Simple Meaning
+
+It groups points that are close and dense.
+Points in low-density areas become noise/outliers.
+
+👉 Works based on two things:
+
+eps → maximum distance to consider neighbors
+min_samples → minimum points to form a dense region (cluster)
+
+👉 How it works
+
+Pick a point
+Count neighbors within eps
+If neighbors ≥ min_samples → it becomes a core point
+Expand cluster by adding nearby points
+Points not reachable become noise
+
+👉 Best for when:
+
+Data has irregular shapes (circles, curves, clusters like moon-shape)
+You want automatic outlier detection
+You do NOT want to manually select k (unlike KMeans)
